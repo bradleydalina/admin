@@ -1,5 +1,5 @@
 body {
-    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #1e222a;
     font-size: 13px;
     color: #676a6c;
@@ -26,14 +26,35 @@ body {
     background-color: #2f4050;
     background-image: url(../img/header-profile.png);
     background-size: cover;
-}
+    aspect-ratio: 1;
+    background: conic-gradient(at 51% 29%, #202229 90deg, #1d1f25 0 225deg, #242831 0);
+  }
 .navbar-default {
     background-color: transparent;
     border-color: #2f4050;
 }
 .nav > li.active {
-    border-left: 4px solid #008941;
     background: #272b36;
+}
+.nav > li{
+    position:relative;
+    /* overflow:hidden; */
+}
+.nav > li:hover::before{
+    content:"";
+    position:absolute;
+    left:0;
+    width:0px;
+    height:100%;
+    border-left: 4px solid #08130d3a;
+}
+.nav > li.active::before {
+    content:"";
+    position:absolute;
+    left:0;
+    width:0px;
+    height:100%;
+    border-left: 4px solid #008941;
 }
 .nav.metismenu > li {
     display: block;
@@ -53,8 +74,15 @@ body {
     color:#8c97ad;
     font-weight: 500;
     padding: 14px 20px 14px 25px;
-    display: block;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width:100%;
 }
+/* .nav > li > a*{line-height: 1;} */
+.nav > li > a > span + span:last-child{margin-left: auto;}
 a {
     text-decoration: none;
 }
@@ -129,4 +157,37 @@ ul.nav-second-level {
 }
 *, ::after, ::before {
     box-sizing: border-box;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+@media (min-width: 768px) {
+    #page-wrapper {
+        position: inherit;
+        margin: 0 0 0 220px;
+        min-height: 100vh;
+    }
+}
+#page-wrapper {
+    padding: 0 15px;
+    min-height: 100vh;
+    height:100%;
+    position: relative !important;
+}
+.gray-bg, .bg-muted {
+    background-color:  #f3f3f4;/*#f8f9fa;*/
+}
+
+.footer {
+    background: none repeat scroll 0 0 #e9e9e9;
+    border-top: 1px solid #e7eaec;
+    bottom: 0;
+    left: 0;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
 }

@@ -7,27 +7,33 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="assets/css/icon-font.min.css" rel="stylesheet">
+    <link href="assets/css/phosphor-icons.css" rel="stylesheet">
     <link href="assets/css/animate.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body class="pace-done">
     <div id="eu-wrapper">
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
-                    <li class="nav-header pt-4 pb-4">
+                    <li class="nav-header py-5">
                         <div class="dropdown profile-element text-center">
                             <span style="position:relative;display:inline-block;">
                                 <img alt="image" class="rounded-circle my-profile-photo"
                                     src="assets/img/bradley.dalina@pnp.gov.ph.jpg?1708581892"
                                     width="80px" height="80px">
                                 <i class="fa fa-circle"
-                                    style="color: #28a745!important; position:absolute; bottom:8px;right:-2px; font-size:14px;">&nbsp;</i>
+                                    style="color: #008941!important; position:absolute; bottom:8px;right:-2px; font-size:14px;">&nbsp;</i>
                             </span>
                             <div data-bs-toggle="dropdown" class="dropdown-toggle" style="margin-bottom: 10px;">
                                 <span class="clear">
-                                    <span class="d-block mt-3"> <strong class="font-bold text-white">Pat Bradley B
-                                            Dalina<br>RHQ / R10</strong></span>
+                                    <span class="d-block mt-3"> <p class="fw-normal text-white">Pat Bradley B
+                                            Dalina<br>RHQ / R10</p></span>
                                     <span class="d-block mt-3" id="user_unit" style="font-size: 12px;">
                                         <strong class="font-bold text-white"></strong></span>
                                     <span class="text-muted text-xs block" id="user_level"
@@ -75,7 +81,7 @@
                     </li>
                     <li class="menu-list">
                         <a href="https://pro8-eservice.net/dashboard">
-                            <i class="lnr lnr-home fa-lg"></i>
+                            <i class="ph ph-house-line fa-lg"></i>
                             <span class="nav-label">
                                 Home
                             </span>
@@ -83,7 +89,7 @@
                     </li>
                     <li class="menu-list ">
                         <a href="https://pro8-eservice.net/mailbox">
-                            <i class="lnr lnr-envelope fa-lg"></i>
+                            <i class="ph ph-envelope-simple fa-lg"></i>
                             <span class="nav-label">
                                 Mailbox
                             </span>
@@ -91,15 +97,15 @@
                     </li>
                     <li class="menu-list ">
                         <a href="https://pro8-eservice.net/service">
-                            <i class="lnr lnr-plus-circle fa-lg"></i>
+                            <i class="ph ph-folder-plus fa-lg"></i>
                             <span class="nav-label">
                                 Service
                             </span>
                         </a>
                     </li>
                     <li class="menu-list parent-menu-13 parent-menu active">
-                        <a href="javascript:void(0);"><i class="lnr lnr-enter fa-lg"></i> <span
-                                class="nav-label">Services</span><span class="fa arrow"></span></a>
+                        <a href="javascript:void(0);"><i class="ph ph-folder-open fa-lg fa-lg"></i> <span
+                                class="nav-label">Services</span><span class="ph ph-caret-left"></span></a>
                         <ul class="nav nav-second-level collapse" aria-expanded="false">
                             <li><a href="https://pro8-eservice.net/services/finance">Finance</a></li>
                             <li><a href="https://pro8-eservice.net/services/legal">Legal</a></li>
@@ -111,8 +117,8 @@
                         </ul>
                     </li>
                     <li class="menu-list parent-menu-7 parent-menu ">
-                        <a href="javascript:void(0);"><i class="fa fa-cogs"></i> <span
-                                class="nav-label">Settings</span><span class="fa arrow"></span></a>
+                        <a href="javascript:void(0);"><i class="ph ph-faders-horizontal fa-lg"></i> <span
+                                class="nav-label">Settings</span><span class="ph ph-caret-left"></span></a>
                         <ul class="nav nav-second-level collapse" aria-expanded="false">
                             <li><a href="https://pro8-eservice.net/user">User Management</a></li>
                             <li><a href="https://pro8-eservice.net/role">Role Management</a></li>
@@ -120,15 +126,15 @@
                         </ul>
                     </li>
                     <li class="menu-list parent-menu-23 parent-menu ">
-                        <a href="javascript:void(0);"><i class="fa fa-lock"></i> <span
-                                class="nav-label">Security</span><span class="fa arrow"></span></a>
+                        <a href="javascript:void(0);"><i class="ph ph-lock-key fa-lg"></i> <span
+                                class="nav-label">Security</span><span class="ph ph-caret-left"></span></a>
                         <ul class="nav nav-second-level collapse" aria-expanded="false">
                             <li><a href="https://pro8-eservice.net/alerts">Log Alerts</a></li>
                         </ul>
                     </li>
                     <li class="menu-list ">
                         <a href="https://pro8-eservice.net/logs">
-                            <i class="fa fa-book"></i>
+                            <i class="ph ph-notebook fa-lg"></i>
                             <span class="nav-label">
                                 Activity Logs
                             </span>
@@ -137,6 +143,77 @@
                 </ul>
             </div>
         </nav>
+        <div id="page-wrapper" class="bg-light">
+            <div class="row border-bottom border-1">
+                <style style="">
+                    .navbar-header{
+                        width: 50%;
+                    }
+                    .navbar-form-custom {
+                        width: 70%;
+                    }
+                    #search_key{
+                        border: none;
+                        background-color: #f3f3f4!important;
+                        height: 49px;
+                        width: 100%;
+                    }
+                    strong#inquiry_data_user,
+                    .dropdown-messages-box .media-body strong {
+                    text-transform: capitalize;
+                    }
+                    </style>
+                    <nav class="navbar navbar-static-top p-3" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header" style="display:flex; align-items:center; justify-items:center;">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-default btn-sm rounded-0 " href="#"><i class="ph ph-list fa-xl fw-bold"></i> </a>
+                        <div id="time" style="font-size: 14px; margin-left:10px;">September 24, 2024  4:35:27 PM</div>
+                        <script style="">
+                            const current_date = new Date();
+                            const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                            let month = months[current_date.getMonth()];
+                            let day = current_date.getDate();
+                            let year = current_date.getFullYear();
+                            var timeDisplay = document.getElementById("time");
+                            function refreshTime() {
+                                var dateString = new Date().toLocaleString("en-US", {timeZone: "Asia/Manila"});                                
+                                var formattedString = dateString.replace(/^.*[\\\,]/, '');
+                                timeDisplay.innerHTML = month+' '+day+', '+year+' '+formattedString;
+                            }
+                            setInterval(refreshTime, 1000);
+                        </script>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">        
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message">
+                            <small style="font-size:0.7rem"><span class="text-primary"><i class="fa fa-user">&nbsp;</i>&nbsp;Logged to PRO8 ESERVICES</span></small>                
+                            </span>
+                        </li>
+                        <li>
+                            <form action="https://pro8-eservice.net/logout" method="POST" id="logout" class="mr-4">
+                                <input type="hidden" name="_token" value="dutCsNGUA7vTUgMYMF5zD7eXi5VUwCns60nQF8NT" autocomplete="off" style="">                <input type="hidden" name="email" value="bradley.dalina@pnp.gov.ph" style="">
+                                <a class="text-secondary" role="button" title="Logout" href="#" onclick="$('#logout').submit()">
+                                    <i class="fa fa-sign-out font-weight-bold"></i> Logout
+                                </a>
+                            </form>
+                        </li>
+                    </ul>
+                    </nav>
+            </div>
+            <div class="row wrapper border-bottom bg-white page-heading py-4 px-3">
+                <div class="col-lg-10">
+                    <h2 class="my-2 fs-5 fw-normal">Services Management</h2>
+                </div>
+            </div>  
+            <div class="clearfix"><br></div>
+            <div class="footer">
+                <div class="float-end">
+                    <a><small><i class="fa fa-question-circle"></i>&nbsp;<span class="nav-label">Developed by <strong>RICTMD8</strong></span></small></a>
+                </div>
+                <div>
+                    <small>Copyright <strong>Police Regional Office 8</strong> © <strong>2024</strong></small>
+                </div>
+            </div>
+        </div>                 
     </div>
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
