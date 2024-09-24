@@ -1,20 +1,144 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>EUPHROSYNE | 1.0</title>
-            <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-            <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
-            <link href="assets/css/icon-font.min.css" rel="stylesheet">
-            <link href="assets/css/animate.min.css" rel="stylesheet">
-            <link href="assets/css/style.css" rel="stylesheet">
-        </head>
-        <body>
-            <div id="eu-wrapper">
-                <i class="lnr lnr-home fa-10x"></i>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EUPHROSYNE | 1.0</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/icon-font.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body class="pace-done">
+    <div id="eu-wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header pt-4 pb-4">
+                        <div class="dropdown profile-element text-center">
+                            <span style="position:relative;display:inline-block;">
+                                <img alt="image" class="rounded-circle my-profile-photo"
+                                    src="assets/img/bradley.dalina@pnp.gov.ph.jpg?1708581892"
+                                    width="80px" height="80px">
+                                <i class="fa fa-circle"
+                                    style="color: #28a745!important; position:absolute; bottom:8px;right:-2px; font-size:14px;">&nbsp;</i>
+                            </span>
+                            <div data-bs-toggle="dropdown" class="dropdown-toggle" style="margin-bottom: 10px;">
+                                <span class="clear">
+                                    <span class="d-block mt-3"> <strong class="font-bold text-white">Pat Bradley B
+                                            Dalina<br>RHQ / R10</strong></span>
+                                    <span class="d-block mt-3" id="user_unit" style="font-size: 12px;">
+                                        <strong class="font-bold text-white"></strong></span>
+                                    <span class="text-muted text-xs block" id="user_level"
+                                        style="cursor: pointer; white-space: break-spaces;">SYSTEM ADMINISTRATOR <b class="caret"></b></span>
+                                    <ul class="dropdown-menu animated fadeIn m-t" style="">
+                                        <br>
+                                        <li>
+                                            <a style="color:black" role="btn"
+                                                class="dropdown-item update-profile-button" data-bs-toggle="modal"
+                                                href="#update-profile-modal" data-bs-target="#update-profile-modal">
+                                                <i class="fa fa-user m-r"></i> Update Profile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a style="color:black" role="btn"
+                                                class="dropdown-item alternate-email-button" data-bs-toggle="modal"
+                                                href="#alternate-email-modal" data-bs-target="#alternate-email-modal">
+                                                <i class="fa fa-envelope m-r"></i> Alternate Email
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a style="color:black" role="btn"
+                                                class="dropdown-item update-password-button" data-bs-toggle="modal"
+                                                href="#update-password-modal" data-bs-target="#update-password-modal">
+                                                <i class="fa fa-key m-r"></i> Change Password
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <form action="https://pro8-eservice.net/logout" method="POST" id="logout2">
+                                                <input type="hidden" name="_token"
+                                                    value="KAPEo3NDXzQdwyq3wZ68PUAclZ1v4XZaJafe4OFG" autocomplete="off"
+                                                    style=""> <input type="hidden" name="email"
+                                                    value="bradley.dalina@pnp.gov.ph" style="">
+                                                <a class="dropdown-item" href="#" onclick="$('#logout2').submit()"
+                                                    style="color:black; padding:3px 20px; margin:4px;">
+                                                    <i class="fa fa-sign-out m-r"></i>Logout
+                                                </a>
+                                            </form>
+                                        </li>
+                                        <br>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-list">
+                        <a href="https://pro8-eservice.net/dashboard">
+                            <i class="lnr lnr-home fa-lg"></i>
+                            <span class="nav-label">
+                                Home
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-list ">
+                        <a href="https://pro8-eservice.net/mailbox">
+                            <i class="lnr lnr-envelope fa-lg"></i>
+                            <span class="nav-label">
+                                Mailbox
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-list ">
+                        <a href="https://pro8-eservice.net/service">
+                            <i class="lnr lnr-plus-circle fa-lg"></i>
+                            <span class="nav-label">
+                                Service
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-list parent-menu-13 parent-menu active">
+                        <a href="javascript:void(0);"><i class="lnr lnr-enter fa-lg"></i> <span
+                                class="nav-label">Services</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse" aria-expanded="false">
+                            <li><a href="https://pro8-eservice.net/services/finance">Finance</a></li>
+                            <li><a href="https://pro8-eservice.net/services/legal">Legal</a></li>
+                            <li><a href="https://pro8-eservice.net/services/medical">Medical</a></li>
+                            <li><a href="https://pro8-eservice.net/services/forensic">Forensic</a></li>
+                            <li><a href="https://pro8-eservice.net/services/chaplain">Chaplain</a></li>
+                            <li><a href="https://pro8-eservice.net/services/rlrdd">RLRDD</a></li>
+                            <li><a href="https://pro8-eservice.net/services/rictmd%208">RICTMD 8</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-list parent-menu-7 parent-menu ">
+                        <a href="javascript:void(0);"><i class="fa fa-cogs"></i> <span
+                                class="nav-label">Settings</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse" aria-expanded="false">
+                            <li><a href="https://pro8-eservice.net/user">User Management</a></li>
+                            <li><a href="https://pro8-eservice.net/role">Role Management</a></li>
+                            <li><a href="https://pro8-eservice.net/route">Route List</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-list parent-menu-23 parent-menu ">
+                        <a href="javascript:void(0);"><i class="fa fa-lock"></i> <span
+                                class="nav-label">Security</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse" aria-expanded="false">
+                            <li><a href="https://pro8-eservice.net/alerts">Log Alerts</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-list ">
+                        <a href="https://pro8-eservice.net/logs">
+                            <i class="fa fa-book"></i>
+                            <span class="nav-label">
+                                Activity Logs
+                            </span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <script src="assets/js/jquery-3.7.1.min.js"></script>
-            <script src="assets/js/bootstrap.bundle.min.js"></script>
-        </body>
-    </html>
+        </nav>
+    </div>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
