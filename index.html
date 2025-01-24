@@ -4,61 +4,51 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EUPHROSYNE | 1.0</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
-    <link href="assets/css/icon-font.min.css" rel="stylesheet">
-    <link href="assets/css/phosphor-icons.css" rel="stylesheet">
-    <link href="assets/css/animate.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="icon" href="assets/img/bradley.dalina@pnp.gov.ph.jpg"/>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/icon-font.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/phosphor-icons.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
 </head>
-<body class="pace-done">
+<body>
     <div id="eu-wrapper">
-        <nav class="navbar-default navbar-static-side" role="navigation">
+        <nav id="eu-navbar" class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
-                <ul class="nav metismenu" id="side-menu">
-                    <li class="nav-header py-5">
-                        <div class="dropdown profile-element text-center">
-                            <span style="position:relative;display:inline-block;">
-                                <img alt="image" class="rounded-circle my-profile-photo"
-                                    src="assets/img/bradley.dalina@pnp.gov.ph.jpg?1708581892"
-                                    width="80px" height="80px">
-                                <i class="fa fa-circle"
-                                    style="color: #008941!important; position:absolute; bottom:8px;right:-2px; font-size:14px;">&nbsp;</i>
+                <ul id="side-menu" class="nav metismenu">
+                    <li class="nav-header pt-5 pb-2">
+                        <div class="profile-section dropdown text-center">
+                            <span class="photo-section position-relative d-inline-block">
+                                <img alt="image" class="profile-photo rounded-circle"
+                                    src="assets/img/bradley.dalina@pnp.gov.ph.jpg?1708581892">
+                                <i class="fa fa-circle position-absolute text-success">&nbsp;</i>
                             </span>
-                            <div data-bs-toggle="dropdown" class="dropdown-toggle" style="margin-bottom: 10px;">
-                                <span class="clear">
-                                    <span class="d-block mt-3"> <p class="fw-normal text-white">Pat Bradley B
-                                            Dalina<br>RHQ / R10</p></span>
-                                    <span class="d-block mt-3" id="user_unit" style="font-size: 12px;">
-                                        <strong class="font-bold text-white"></strong></span>
-                                    <span class="text-muted text-xs block" id="user_level"
-                                        style="cursor: pointer; white-space: break-spaces;">SYSTEM ADMINISTRATOR <b class="caret"></b></span>
-                                    <ul class="dropdown-menu animated fadeIn m-t" style="">
-                                        <br>
+                            <span class="clear d-block mt-3"> 
+                                <p class="fw-normal text-white">Pat Bradley B Dalina<br>RHQ / R10</p>
+                            </span>
+                            <div data-bs-toggle="dropdown" class="dropdown-toggle mb-2">                               
+                                    <span id="profile-level" class="text-muted fs-7 d-inline-block text-wrap text-break pointer">SYSTEM ADMINISTRATOR</span>
+                                    <ul class="dropdown-menu animate__animated animate__fadeIn m-t p-2">
                                         <li>
-                                            <a style="color:black" role="btn"
-                                                class="dropdown-item update-profile-button" data-bs-toggle="modal"
+                                            <a role="btn"
+                                                class="btn btn-default dropdown-item update-profile-button" data-bs-toggle="modal"
                                                 href="#update-profile-modal" data-bs-target="#update-profile-modal">
-                                                <i class="fa fa-user m-r"></i> Update Profile
+                                                <i class="fa fa-user"></i> Update Profile
                                             </a>
                                         </li>
                                         <li>
-                                            <a style="color:black" role="btn"
-                                                class="dropdown-item alternate-email-button" data-bs-toggle="modal"
+                                            <a role="btn"
+                                                class="btn btn-default dropdown-item alternate-email-button" data-bs-toggle="modal"
                                                 href="#alternate-email-modal" data-bs-target="#alternate-email-modal">
-                                                <i class="fa fa-envelope m-r"></i> Alternate Email
+                                                <i class="fa fa-envelope"></i> Alternate Email
                                             </a>
                                         </li>
                                         <li>
-                                            <a style="color:black" role="btn"
-                                                class="dropdown-item update-password-button" data-bs-toggle="modal"
+                                            <a role="btn"
+                                                class="btn btn-default dropdown-item update-password-button" data-bs-toggle="modal"
                                                 href="#update-password-modal" data-bs-target="#update-password-modal">
-                                                <i class="fa fa-key m-r"></i> Change Password
+                                                <i class="fa fa-key"></i> Change Password
                                             </a>
                                         </li>
                                         <li>
@@ -67,20 +57,22 @@
                                                     value="KAPEo3NDXzQdwyq3wZ68PUAclZ1v4XZaJafe4OFG" autocomplete="off"
                                                     style=""> <input type="hidden" name="email"
                                                     value="bradley.dalina@pnp.gov.ph" style="">
-                                                <a class="dropdown-item" href="#" onclick="$('#logout2').submit()"
-                                                    style="color:black; padding:3px 20px; margin:4px;">
-                                                    <i class="fa fa-sign-out m-r"></i>Logout
+                                                <a class="btn btn-default dropdown-item" href="#" onclick="$('#logout2').submit()"
+                                                    >
+                                                    <i class="fa fa-sign-out"></i> Logout
                                                 </a>
                                             </form>
                                         </li>
-                                        <br>
                                     </ul>
                                 </span>
                             </div>
                         </div>
+                        <div class="brand-section">
+                            EU+
+                        </div>
                     </li>
-                    <li class="menu-list">
-                        <a href="https://pro8-eservice.net/dashboard">
+                    <li class="menu-list active">
+                        <a href="#">
                             <i class="ph ph-house-line fa-lg"></i>
                             <span class="nav-label">
                                 Home
@@ -88,58 +80,64 @@
                         </a>
                     </li>
                     <li class="menu-list ">
-                        <a href="https://pro8-eservice.net/mailbox">
+                        <a href="#">
                             <i class="ph ph-envelope-simple fa-lg"></i>
                             <span class="nav-label">
                                 Mailbox
                             </span>
                         </a>
                     </li>
-                    <li class="menu-list ">
-                        <a href="https://pro8-eservice.net/service">
+                    <li class="menu-list">
+                        <a href="#">
                             <i class="ph ph-folder-plus fa-lg"></i>
                             <span class="nav-label">
                                 Service
                             </span>
                         </a>
                     </li>
-                    <li class="menu-list parent-menu-13 parent-menu active">
+                    <li class="menu-list parent-menu-13 parent-menu">
                         <a href="javascript:void(0);"><i class="ph ph-folder-open fa-lg fa-lg"></i> <span
                                 class="nav-label">Services</span><span class="ph ph-caret-left"></span></a>
                         <ul class="nav nav-second-level collapse" aria-expanded="false">
-                            <li><a href="https://pro8-eservice.net/services/finance">Finance</a></li>
-                            <li><a href="https://pro8-eservice.net/services/legal">Legal</a></li>
-                            <li><a href="https://pro8-eservice.net/services/medical">Medical</a></li>
-                            <li><a href="https://pro8-eservice.net/services/forensic">Forensic</a></li>
-                            <li><a href="https://pro8-eservice.net/services/chaplain">Chaplain</a></li>
-                            <li><a href="https://pro8-eservice.net/services/rlrdd">RLRDD</a></li>
-                            <li><a href="https://pro8-eservice.net/services/rictmd%208">RICTMD 8</a></li>
+                            <li><a href="#">Finance</a></li>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Medical</a></li>
+                            <li><a href="#">Forensic</a></li>
+                            <li><a href="#">Chaplain</a></li>
+                            <li><a href="#">RLRDD</a></li>
+                            <li><a href="#">RICTMD 8</a></li>
                         </ul>
                     </li>
                     <li class="menu-list parent-menu-7 parent-menu ">
                         <a href="javascript:void(0);"><i class="ph ph-faders-horizontal fa-lg"></i> <span
                                 class="nav-label">Settings</span><span class="ph ph-caret-left"></span></a>
                         <ul class="nav nav-second-level collapse" aria-expanded="false">
-                            <li><a href="https://pro8-eservice.net/user">User Management</a></li>
-                            <li><a href="https://pro8-eservice.net/role">Role Management</a></li>
-                            <li><a href="https://pro8-eservice.net/route">Route List</a></li>
+                            <li><a href="#">User Management</a></li>
+                            <li><a href="#">Role Management</a></li>
+                            <li><a href="#">Route List</a></li>
                         </ul>
                     </li>
                     <li class="menu-list parent-menu-23 parent-menu ">
                         <a href="javascript:void(0);"><i class="ph ph-lock-key fa-lg"></i> <span
                                 class="nav-label">Security</span><span class="ph ph-caret-left"></span></a>
                         <ul class="nav nav-second-level collapse" aria-expanded="false">
-                            <li><a href="https://pro8-eservice.net/alerts">Log Alerts</a></li>
+                            <li><a href="#">Log Alerts</a></li>
                         </ul>
                     </li>
-                    <li class="menu-list ">
-                        <a href="https://pro8-eservice.net/logs">
+                    <li class="menu-list">
+                        <a href="#">
                             <i class="ph ph-notebook fa-lg"></i>
                             <span class="nav-label">
                                 Activity Logs
                             </span>
                         </a>
                     </li>
+                    <li class="nav-footer p-4 mt-3">
+                        <i class="ph ph-paint-roller text-success fa-3x d-block mb-3"></i>
+                        <div class="m-t-xs text-justify">
+                            <span class="text-white">EUPHROSYNE 1.0</span> admin theme with Dark UI style for monitoring and administration web applications.
+                        </div>
+                    </li>                     
                 </ul>
             </div>
         </nav>
@@ -182,10 +180,24 @@
                             setInterval(refreshTime, 1000);
                         </script>
                     </div>
-                    <ul class="nav navbar-top-links navbar-right">        
+                    <ul class="nav navbar-top-links navbar-right">  
+                        <li class="dropdown" id="notification-icon-message">
+                            <a class="dropdown-toggle count-info" data-bs-toggle="dropdown" href="#" aria-expanded="true">
+                                <i class="fa fa-envelope"></i>  <span class="label label-danger chat-notification-counter">0</span>
+                            </a>
+                            <ul id="chat-drop-list" class="dropdown-menu dropdown-messages">                        
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="notification-icon-bell">
+                            <a class="dropdown-toggle count-info" data-bs-toggle="dropdown" href="#" aria-expanded="true">
+                                <i class="fa fa-bell"></i>  <span class="label label-primary inquiry-notification-counter">0</span>
+                            </a>
+                            <ul id="notification-drop-list" class="dropdown-menu dropdown-messages">                        
+                            </ul>
+                        </li>      
                         <li>
                             <span class="m-r-sm text-muted welcome-message">
-                            <small style="font-size:0.7rem"><span class="text-primary"><i class="fa fa-user">&nbsp;</i>&nbsp;Logged to PRO8 ESERVICES</span></small>                
+                            <!-- <small style="font-size:0.7rem"><span class="text-primary"><i class="fa fa-user">&nbsp;</i>&nbsp;Logged to PRO8 ESERVICES</span></small>                 -->
                             </span>
                         </li>
                         <li>
@@ -202,6 +214,7 @@
             <div class="row wrapper border-bottom bg-white page-heading py-4 px-3">
                 <div class="col-lg-10">
                     <h2 class="my-2 fs-5 fw-normal">Services Management</h2>
+                    <span class="mb-2 d-block">Home <i class="lnr lnr-chevron-right fa-2xs"></i> Dashboard</span>
                 </div>
             </div>  
             <div class="clearfix"><br></div>
@@ -216,6 +229,10 @@
         </div>                 
     </div>
     <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>    
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
